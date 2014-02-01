@@ -8,3 +8,11 @@
 
 class SSLStoreApiError(Exception):
     """The base class for all API errors"""
+
+
+class MalformedCSRError(SSLStoreApiError):
+    pass
+
+
+class WildCardCSRError(SSLStoreApiError):
+    pass
